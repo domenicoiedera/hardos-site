@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hardos — bots that do the work</title>
+<meta name="description" content="hardos runs repetitive business work in bots, inside a platform that records every action, every permission and every piece of data.">
+<style>
+  :root{
+    --ink:#0d1117; --panel:#151b23; --line:#232c37; --text:#e6edf3;
+    --muted:#94a3b8; --accent:#5eead4; --accent-dim:#134e4a;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--ink); color:var(--text);
+    font:16px/1.65 ui-sans-serif,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+  header{border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .logo{font-weight:650;letter-spacing:-.02em;font-size:19px;text-decoration:none}
+  .logo span{color:var(--accent)}
+  .nav a.cta{font-size:14px;text-decoration:none;border:1px solid var(--line);padding:9px 16px;border-radius:8px;color:var(--muted)}
+  .nav a.cta:hover{color:var(--text);border-color:#3a4756}
+  .hero{padding:96px 0 72px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 22px}
+  h1{font-size:clamp(34px,5.4vw,60px);line-height:1.08;letter-spacing:-.035em;margin:0 0 24px;font-weight:640;max-width:16ch}
+  .lede{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:60ch;margin:0 0 36px}
+  .actions{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;text-decoration:none;padding:13px 22px;border-radius:9px;font-weight:560;font-size:15px}
+  .btn.primary{background:var(--accent);color:#062b26}
+  .btn.primary:hover{background:#7ff0dc}
+  .btn.ghost{border:1px solid var(--line);color:var(--text)}
+  .btn.ghost:hover{border-color:#3a4756}
+  section{padding:80px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:clamp(24px,3vw,32px);letter-spacing:-.02em;margin:0 0 14px;font-weight:620}
+  .sub{color:var(--muted);max-width:62ch;margin:0 0 44px}
+  .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:26px}
+  .card h3{margin:0 0 10px;font-size:17px;font-weight:600;letter-spacing:-.01em}
+  .card p{margin:0;color:var(--muted);font-size:15px}
+  .step-no{font-size:12px;letter-spacing:.12em;color:var(--accent);margin-bottom:14px}
+  .q{list-style:none;padding:0;margin:0;display:grid;gap:16px;max-width:70ch}
+  .q li{padding-left:26px;position:relative;color:var(--muted)}
+  .q li::before{content:"";position:absolute;left:0;top:.6em;width:9px;height:9px;border:1px solid var(--accent);border-radius:2px}
+  .q strong{color:var(--text);font-weight:560}
+  footer{padding:56px 0 70px;color:var(--muted);font-size:14px}
+  .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  @media (max-width:640px){.hero{padding:64px 0 52px}section{padding:60px 0}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="/">hardos<span>.</span></a>
+    <a class="cta" href="mailto:hello@hardos.dev?subject=Early%20access">Early access</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <p class="eyebrow">Bots for professional work &middot; early access</p>
+    <h1>Bots that do the work. With the record to prove it.</h1>
+    <p class="lede">
+      hardos runs the repetitive part of business work in bots, inside a platform that records
+      what each bot did, who allowed it and what data it touched. Execution without losing control.
+    </p>
+    <p class="lede" style="font-size:15px;margin-top:-16px">
+      In build now. Early access opens first for teams and for individual professionals.
+    </p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:hello@hardos.dev?subject=Early%20access">Request early access</a>
+      <a class="btn ghost" href="#how">How it works</a>
+    </div>
+  </div>
+
+  <section id="how">
+    <div class="wrap">
+      <h2>Three steps, one record</h2>
+      <p class="sub">The bot is the easy part. The reason a business can say yes is what happens around it.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="step-no">01</div>
+          <h3>Point it at the work</h3>
+          <p>Onboarding packs, KYC files, research, drafting. A repeatable job your team already runs by hand.</p>
+        </div>
+        <div class="card">
+          <div class="step-no">02</div>
+          <h3>Set the limits</h3>
+          <p>Who can start it, what it may touch, what it must never do. Limits are part of the job, not an afterthought.</p>
+        </div>
+        <div class="card">
+          <div class="step-no">03</div>
+          <h3>Read the record</h3>
+          <p>Every run leaves an account of itself. Review the output, keep the evidence, answer the client who asks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Built for the questions your client will ask</h2>
+      <p class="sub">Not a feature list. The four questions that decide whether AI is allowed near professional work.</p>
+      <ul class="q">
+        <li><strong>Who approved this output?</strong> A named person, at a named step, not an implicit yes.</li>
+        <li><strong>What did it touch?</strong> The files and data behind the run, listed.</li>
+        <li><strong>Where did the data go?</strong> Stated plainly, before the first job runs, not in an appendix.</li>
+        <li><strong>What happens when it is wrong?</strong> The output is a draft with a reviewer, not a verdict.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Two ways in</h2>
+      <p class="sub">Same engine. Different amount of setup.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>For teams</h3>
+          <p>Firms and operations teams that run the same document work every week and need a record of it. Start with one workflow, one owner, one review step.</p>
+          <p style="margin-top:18px"><a class="btn ghost" href="mailto:hello@hardos.dev?subject=Team%20pilot%20-%20hardos">Ask about a team pilot</a></p>
+        </div>
+        <div class="card">
+          <h3>For individuals</h3>
+          <p>Consultants, analysts and independent professionals who want their own bot for admin, research and drafts, without handing their client files to a consumer tool.</p>
+          <p style="margin-top:18px"><a class="btn ghost" href="mailto:hello@hardos.dev?subject=Individual%20early%20access%20-%20hardos">Join as an individual</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>hardos.dev &middot; <a href="mailto:hello@hardos.dev">hello@hardos.dev</a></div>
+    <div>Early access. Pricing at launch.</div>
+  </div>
+</footer>
+
+</body>
+</html>
